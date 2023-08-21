@@ -1,0 +1,117 @@
+/* Styles for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2180C1;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 35px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin from h1 */
+}
+
+.nav-button {
+    font-size: 22px; /* Adjust the font size as needed */
+    background-color: #2180C1;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+.nav-button.login::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Position the circle vertically centered */
+    left: -10px; /* Adjust the position of the circle */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.nav-button:hover {
+    background-color: #5597C4;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/homebg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f5f5f5;
+}
+
+/* Styles for the floating info box */
+.info-box {
+    position: fixed;
+    bottom: 0;
+    width: calc(45% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+/* Styles for the left info box */
+.left {
+    left: 20px;
+}
+
+/* Styles for the right info box */
+.right {
+    right: 20px;
+}
+
+.instagram-logo {
+    position: fixed;
+    bottom: -10px; /* Adjust the distance from the bottom as needed */
+    left: 1370px; /* Adjust the distance from the left as needed */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram-logo img {
+    width: 200px; /* Adjust the width of the logo as needed */
+    height: auto;
+}
+
+/* Styles for the logo image */
+.logo-image {
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: auto;
+    margin-left: 10px; /* Adjust the spacing between the logo and H1 tag */
+}
+
+.login-button {
+	border-width: 3px;
+	border-style: solid;
+	border-color: #06E390;
+	border-radius: 25px;
+}

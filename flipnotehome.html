@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipNote.</title>
+    <link rel="stylesheet" href="home.css">
+	<link rel="icon" href="images/webicon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-left">
+	<img src="images/LOGO.png" alt="FlipNote Logo" class="logo-image">
+        <h1 class="logo">FlipNote.</h1>
+    </div>
+    <div class="nav-right">
+		
+        <a href="flipnotehome.html"><button class="nav-button">Home</button></a>
+        <a href="joinus.html"><button class="nav-button">Join Us!</button></a>
+        <a href="support.html"><button class="nav-button">Support</button></a>
+		<a href="login.html"><button class="nav-button login-button">Login</button></a>
+    </div>
+</nav>
+
+
+<!-- Floating Info Box (Left) -->
+<div class="info-box left">
+    <h1>About FlipNote</h3>
+    <p>FlipNote. is a dedicated platform designed for marching bands, offering a secure and convenient way to store your stand tunes, show music, and other musical arrangements on your smartphone, computer, or tablet</p>
+</div>
+
+<!-- Floating Info Box (Right) -->
+<div class="info-box right">
+    <h3>Stay Connected</h3>
+    <p>Follow us on social media for updates and more!</p>
+	<div class="instagram-logo">
+     <a href="https://www.instagram.com/flipnoteapp/" class="instagram-logo" target="_blank">
+            <img src="images/instagram.png" alt="FlipNote Logo">
+        </a>
+</div>
+</div>
+
+
+
+<script>
+    const infoBox = document.querySelector('.info-box');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight / 2) {
+            infoBox.classList.add('scrolled-up');
+        } else {
+            infoBox.classList.remove('scrolled-up');
+        }
+    });
+</script>
+</body>
+</html>

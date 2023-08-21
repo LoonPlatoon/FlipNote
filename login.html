@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FlipNote.</title>
+    <link rel="stylesheet" href="login.css">
+	<link rel="icon" href="images/webicon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-left">
+	<img src="images/LOGO.png" alt="FlipNote Logo" class="logo-image">
+        <h1 class="logo">FlipNote.</h1>
+    </div>
+    <div class="nav-right">
+		
+        <a href="flipnotehome.html"><button class="nav-button">Home</button></a>
+        <a href="joinus.html"><button class="nav-button">Join Us!</button></a>
+        <a href="support.html"><button class="nav-button">Support</button></a>
+		<a href="login.html"><button class="nav-button">Login</button></a>
+    </div>
+</nav>
+
+
+<div class="content-wrapper">
+    <!-- Homepage -->
+    <section class="homepage">
+        <h1>Welcome to FlipNote.</h1>
+        <p>Login here to access your shared and uploaded music!</p>
+    </section>
+
+    <!-- Login Page -->
+    <section class="login">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password"> Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>

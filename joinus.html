@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us! - FlipNote</title>
+    <link rel="stylesheet" href="joinus.css">
+	<link rel="icon" href="images/webicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-left">
+	<img src="images/LOGO.png" alt="FlipNote Logo" class="logo-image">
+        <h1 class="logo">FlipNote.</h1>
+    </div>
+    <div class="nav-right">
+		
+        <a href="flipnotehome.html"><button class="nav-button">Home</button></a>
+        <a href="joinus.html"><button class="nav-button">Join Us!</button></a>
+        <a href="support.html"><button class="nav-button">Support</button></a>
+		<a href="login.html"><button class="nav-button">Login</button></a>
+    </div>
+</nav>
+
+<!-- Centered Content -->
+<section class="centered-box">
+    <h2>Create an Account</h2>
+    <form action="/register" method="post">
+        <div class="input-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="input-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+            <label for="instrument">Instrument:</label>
+            <select id="instrument" name="instrument">
+			 <option value="" selected disabled>Select an instrument</option>
+    <optgroup label="Woodwinds">
+        <option value="Flute">Flute</option>
+        <option value="Clarinet">Clarinet</option>
+        <option value="Alto Saxophone">Alto Saxophone</option>
+        <option value="Tenor Saxophone">Tenor Saxophone</option>
+        <option value="Bass Clarinet">Bass Clarinet</option>
+        <option value="Bassoon">Bassoon</option>
+        <option value="Piccolo">Piccolo</option>
+    </optgroup>
+    <optgroup label="Brass">
+        <option value="Trumpet">Trumpet</option>
+        <option value="French Horn">French Horn</option>
+        <option value="Trombone">Trombone</option>
+        <option value="Baritone">Baritone</option>
+        <option value="Mellophone">Mellophone</option>
+        <option value="Tuba">Tuba</option>
+        <option value="Sousaphone">Sousaphone</option>
+    </optgroup>
+    <optgroup label="Percussion">
+        <option value="Snare Drum">Snare Drum</option>
+        <option value="Bass Drum">Bass Drum</option>
+        <option value="Cymbals">Cymbals</option>
+        <option value="Triangle">Triangle</option>
+        <option value="Xylophone">Xylophone</option>
+        <option value="Vibraphone">Vibraphone</option>
+        <option value="Drum Set">Drum Set</option>
+    </optgroup>
+</select>
+        </div>
+        <button type="submit">Create Account</button>
+    </form>
+</section>
+
+
+</body>
+</html
